@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		48B89DE62A54DA3E00919CFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B89DE52A54DA3E00919CFD /* AppDelegate.swift */; };
 		48B89DE82A54DA3E00919CFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B89DE72A54DA3E00919CFD /* SceneDelegate.swift */; };
-		48B89DEA2A54DA3E00919CFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B89DE92A54DA3E00919CFD /* ViewController.swift */; };
-		48B89DED2A54DA3E00919CFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48B89DEB2A54DA3E00919CFD /* Main.storyboard */; };
 		48B89DEF2A54DA4000919CFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48B89DEE2A54DA4000919CFD /* Assets.xcassets */; };
 		48B89DF22A54DA4000919CFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48B89DF02A54DA4000919CFD /* LaunchScreen.storyboard */; };
+		48B89DFB2A54DEF100919CFD /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B89DFA2A54DEF100919CFD /* Coordinator.swift */; };
+		48B89DFD2A54DF1100919CFD /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B89DFC2A54DF1100919CFD /* Router.swift */; };
+		48B89DFF2A54DFC100919CFD /* MainTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B89DFE2A54DFC100919CFD /* MainTransition.swift */; };
+		48B89E042A54E07B00919CFD /* MainListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B89E022A54E07B00919CFD /* MainListViewController.swift */; };
+		48B89E052A54E07B00919CFD /* MainListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48B89E032A54E07B00919CFD /* MainListViewController.xib */; };
+		48B89E072A54E09400919CFD /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B89E062A54E09400919CFD /* MainCoordinator.swift */; };
+		48B89E092A54E13500919CFD /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B89E082A54E13500919CFD /* App.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		48B89DE22A54DA3E00919CFD /* PokeApi-CoordinatorWithRouter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PokeApi-CoordinatorWithRouter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48B89DE52A54DA3E00919CFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48B89DE72A54DA3E00919CFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		48B89DE92A54DA3E00919CFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		48B89DEC2A54DA3E00919CFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		48B89DEE2A54DA4000919CFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48B89DF12A54DA4000919CFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48B89DF32A54DA4000919CFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48B89DFA2A54DEF100919CFD /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		48B89DFC2A54DF1100919CFD /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		48B89DFE2A54DFC100919CFD /* MainTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTransition.swift; sourceTree = "<group>"; };
+		48B89E022A54E07B00919CFD /* MainListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListViewController.swift; sourceTree = "<group>"; };
+		48B89E032A54E07B00919CFD /* MainListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainListViewController.xib; sourceTree = "<group>"; };
+		48B89E062A54E09400919CFD /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		48B89E082A54E13500919CFD /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,44 @@
 		48B89DE42A54DA3E00919CFD /* PokeApi-CoordinatorWithRouter */ = {
 			isa = PBXGroup;
 			children = (
+				48B89DFE2A54DFC100919CFD /* MainTransition.swift */,
 				48B89DE52A54DA3E00919CFD /* AppDelegate.swift */,
 				48B89DE72A54DA3E00919CFD /* SceneDelegate.swift */,
-				48B89DE92A54DA3E00919CFD /* ViewController.swift */,
-				48B89DEB2A54DA3E00919CFD /* Main.storyboard */,
+				48B89DF92A54DED600919CFD /* Protocols */,
+				48B89E002A54E05800919CFD /* Views */,
 				48B89DEE2A54DA4000919CFD /* Assets.xcassets */,
 				48B89DF02A54DA4000919CFD /* LaunchScreen.storyboard */,
 				48B89DF32A54DA4000919CFD /* Info.plist */,
+				48B89E082A54E13500919CFD /* App.swift */,
 			);
 			path = "PokeApi-CoordinatorWithRouter";
+			sourceTree = "<group>";
+		};
+		48B89DF92A54DED600919CFD /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				48B89DFA2A54DEF100919CFD /* Coordinator.swift */,
+				48B89DFC2A54DF1100919CFD /* Router.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		48B89E002A54E05800919CFD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				48B89E012A54E05F00919CFD /* Main */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		48B89E012A54E05F00919CFD /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				48B89E022A54E07B00919CFD /* MainListViewController.swift */,
+				48B89E032A54E07B00919CFD /* MainListViewController.xib */,
+				48B89E062A54E09400919CFD /* MainCoordinator.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +164,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48B89E052A54E07B00919CFD /* MainListViewController.xib in Resources */,
 				48B89DF22A54DA4000919CFD /* LaunchScreen.storyboard in Resources */,
 				48B89DEF2A54DA4000919CFD /* Assets.xcassets in Resources */,
-				48B89DED2A54DA3E00919CFD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +177,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48B89DEA2A54DA3E00919CFD /* ViewController.swift in Sources */,
+				48B89DFD2A54DF1100919CFD /* Router.swift in Sources */,
+				48B89E072A54E09400919CFD /* MainCoordinator.swift in Sources */,
 				48B89DE62A54DA3E00919CFD /* AppDelegate.swift in Sources */,
+				48B89DFF2A54DFC100919CFD /* MainTransition.swift in Sources */,
+				48B89E042A54E07B00919CFD /* MainListViewController.swift in Sources */,
+				48B89E092A54E13500919CFD /* App.swift in Sources */,
 				48B89DE82A54DA3E00919CFD /* SceneDelegate.swift in Sources */,
+				48B89DFB2A54DEF100919CFD /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		48B89DEB2A54DA3E00919CFD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				48B89DEC2A54DA3E00919CFD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		48B89DF02A54DA4000919CFD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,7 +327,6 @@
 				INFOPLIST_FILE = "PokeApi-CoordinatorWithRouter/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,7 +353,6 @@
 				INFOPLIST_FILE = "PokeApi-CoordinatorWithRouter/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
