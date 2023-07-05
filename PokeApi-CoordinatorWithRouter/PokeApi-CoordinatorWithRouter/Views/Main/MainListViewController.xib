@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainListViewController" customModule="PokeApi_CoordinatorWithRouter" customModuleProvider="target">
             <connections>
+                <outlet property="collectionView" destination="a6s-KB-J9q" id="evn-be-yxw"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,12 +18,33 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="a6s-KB-J9q">
+                    <rect key="frame" x="0.0" y="119" width="393" height="699"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GKb-cH-W2C">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemGray2Color"/>
-            <point key="canvasLocation" x="140" y="21"/>
+            <constraints>
+                <constraint firstItem="a6s-KB-J9q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="81g-Ae-wJw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="a6s-KB-J9q" secondAttribute="bottom" id="cz4-4L-TiI"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="a6s-KB-J9q" secondAttribute="trailing" id="ilQ-GP-dQh"/>
+                <constraint firstItem="a6s-KB-J9q" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="r2m-g0-ZxJ"/>
+            </constraints>
+            <point key="canvasLocation" x="1170" y="-190"/>
         </view>
     </objects>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

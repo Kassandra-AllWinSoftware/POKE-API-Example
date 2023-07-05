@@ -18,6 +18,12 @@
 		48B89E052A54E07B00919CFD /* MainListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48B89E032A54E07B00919CFD /* MainListViewController.xib */; };
 		48B89E072A54E09400919CFD /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B89E062A54E09400919CFD /* MainCoordinator.swift */; };
 		48B89E092A54E13500919CFD /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B89E082A54E13500919CFD /* App.swift */; };
+		48B89E0C2A54E60400919CFD /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B89E0B2A54E60400919CFD /* Error.swift */; };
+		48B89E102A54E68E00919CFD /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B89E0F2A54E68E00919CFD /* Model.swift */; };
+		48B89E132A54E6BB00919CFD /* APIRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B89E122A54E6BB00919CFD /* APIRepresentable.swift */; };
+		48B89E152A54E73D00919CFD /* PokemonAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B89E142A54E73D00919CFD /* PokemonAPI.swift */; };
+		48B89E192A54E91800919CFD /* PokemonItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B89E172A54E91800919CFD /* PokemonItemCollectionViewCell.swift */; };
+		48B89E1A2A54E91800919CFD /* PokemonItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48B89E182A54E91800919CFD /* PokemonItemCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +40,12 @@
 		48B89E032A54E07B00919CFD /* MainListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainListViewController.xib; sourceTree = "<group>"; };
 		48B89E062A54E09400919CFD /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		48B89E082A54E13500919CFD /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		48B89E0B2A54E60400919CFD /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		48B89E0F2A54E68E00919CFD /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		48B89E122A54E6BB00919CFD /* APIRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRepresentable.swift; sourceTree = "<group>"; };
+		48B89E142A54E73D00919CFD /* PokemonAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonAPI.swift; sourceTree = "<group>"; };
+		48B89E172A54E91800919CFD /* PokemonItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		48B89E182A54E91800919CFD /* PokemonItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PokemonItemCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +81,8 @@
 				48B89DFE2A54DFC100919CFD /* MainTransition.swift */,
 				48B89DE52A54DA3E00919CFD /* AppDelegate.swift */,
 				48B89DE72A54DA3E00919CFD /* SceneDelegate.swift */,
+				48B89E0A2A54E5D600919CFD /* Networking */,
+				48B89E112A54E69900919CFD /* API */,
 				48B89DF92A54DED600919CFD /* Protocols */,
 				48B89E002A54E05800919CFD /* Views */,
 				48B89DEE2A54DA4000919CFD /* Assets.xcassets */,
@@ -99,11 +113,55 @@
 		48B89E012A54E05F00919CFD /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				48B89E162A54E8F800919CFD /* Cell */,
 				48B89E022A54E07B00919CFD /* MainListViewController.swift */,
 				48B89E032A54E07B00919CFD /* MainListViewController.xib */,
 				48B89E062A54E09400919CFD /* MainCoordinator.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		48B89E0A2A54E5D600919CFD /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				48B89E0E2A54E67600919CFD /* Model */,
+				48B89E0D2A54E66000919CFD /* Error */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		48B89E0D2A54E66000919CFD /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				48B89E0B2A54E60400919CFD /* Error.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		48B89E0E2A54E67600919CFD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				48B89E0F2A54E68E00919CFD /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		48B89E112A54E69900919CFD /* API */ = {
+			isa = PBXGroup;
+			children = (
+				48B89E122A54E6BB00919CFD /* APIRepresentable.swift */,
+				48B89E142A54E73D00919CFD /* PokemonAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		48B89E162A54E8F800919CFD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				48B89E172A54E91800919CFD /* PokemonItemCollectionViewCell.swift */,
+				48B89E182A54E91800919CFD /* PokemonItemCollectionViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +225,7 @@
 				48B89E052A54E07B00919CFD /* MainListViewController.xib in Resources */,
 				48B89DF22A54DA4000919CFD /* LaunchScreen.storyboard in Resources */,
 				48B89DEF2A54DA4000919CFD /* Assets.xcassets in Resources */,
+				48B89E1A2A54E91800919CFD /* PokemonItemCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,12 +237,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				48B89DFD2A54DF1100919CFD /* Router.swift in Sources */,
+				48B89E192A54E91800919CFD /* PokemonItemCollectionViewCell.swift in Sources */,
 				48B89E072A54E09400919CFD /* MainCoordinator.swift in Sources */,
+				48B89E152A54E73D00919CFD /* PokemonAPI.swift in Sources */,
 				48B89DE62A54DA3E00919CFD /* AppDelegate.swift in Sources */,
 				48B89DFF2A54DFC100919CFD /* MainTransition.swift in Sources */,
 				48B89E042A54E07B00919CFD /* MainListViewController.swift in Sources */,
+				48B89E102A54E68E00919CFD /* Model.swift in Sources */,
+				48B89E132A54E6BB00919CFD /* APIRepresentable.swift in Sources */,
 				48B89E092A54E13500919CFD /* App.swift in Sources */,
 				48B89DE82A54DA3E00919CFD /* SceneDelegate.swift in Sources */,
+				48B89E0C2A54E60400919CFD /* Error.swift in Sources */,
 				48B89DFB2A54DEF100919CFD /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
